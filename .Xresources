@@ -1,0 +1,23 @@
+URxvt.font: -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+URxvt.scrollBar: false
+
+URxvt.color0: #1d1f21
+URxvt.color1: #cc6666
+URxvt.color2: #b5bd68
+URxvt.color3: #f0c674
+URxvt.color4: #81a2be
+URxvt.color5: #b294bb
+URxvt.color6: #8abeb7
+URxvt.color7: #969896
+URxvt.color8: #373b41
+URxvt.color9: #cc6666
+URxvt.color10: #b5bd68
+URxvt.color11: #f0c674
+URxvt.color12: #81a2be
+URxvt.color13: #b294bb
+URxvt.color14: #8abeb7
+URxvt.color15: #c5c8c6
+
+URxvt.foreground: 15
+URxvt.background: 0
+URxvt.cursorColor: 15
