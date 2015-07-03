@@ -1,11 +1,12 @@
-set ai so=3 title
+set ts=4 sw=0 sts=-1
 
-syntax enable
+call pathogen#infect()
+call pathogen#helptags()
+let g:neocomplete#enable_at_startup = 1
+let g:pymode_folding = 0
+
 colorscheme Tomorrow-Night
 
-map ! :!
-
-set sts=-1 sw=0 ts=4 tw=79
 au Filetype c set ts=8
 au FileType css set et ts=2
 au FileType html set et ts=2
@@ -16,3 +17,5 @@ au FileType python set et
 au FileType ruby set et ts=2
 au FileType svg set et ts=2
 au FileType xml set et ts=2
+
+map ! :!
