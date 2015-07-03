@@ -1,3 +1,5 @@
 [user]
 	email = brandon@jangler.info
 	name = Brandon Mulcahy
+[push]
+	default = matching
