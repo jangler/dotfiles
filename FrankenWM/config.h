@@ -9,6 +9,13 @@
 #define CONTROL         ControlMask /* Control key */
 #define SHIFT           ShiftMask   /* Shift key */
 
+#define XF86AudioPrev 0x1008ff16
+#define XF86AudioPlay 0x1008ff14
+#define XF86AudioNext 0x1008ff17
+#define XF86AudioLowerVolume 0x1008ff11
+#define XF86AudioRaiseVolume 0x1008ff13
+#define XF86Sleep 0x1008ff2f
+
 /* EDIT THIS: general settings */
 #define MASTER_SIZE     0.5       /* master-stack ratio */
 #define SHOW_PANEL      False     /* show panel by default on exec */
@@ -61,11 +68,17 @@ static const AppRule rules[] = { \
  * window. The title of the scratchpad window should also match SCRPDNAME from
  * above
  */
-static const char *termcmd[]  = { "urxvtc",    NULL };
-static const char *menucmd[]  = { "dmenu_run", NULL };
-static const char *scrpcmd[]  = { "urxvt", "-name", "scratchpad", NULL };
-static const char *startcmd[] = { "compton", "-bc", "-r", "8", "-l", "-12",
-	"-t", "-12", NULL };
+static const char
+	*lowercmd[] = { "amixer", "-c", "0", "set", "Master", "2dB-", NULL },
+	*menucmd[]  = { "dmenu_run", NULL },
+	*nextcmd[]  = { "moss", "next", NULL },
+	*playcmd[]  = { "moss", "toggle", NULL },
+	*prevcmd[]  = { "moss", "prev", NULL },
+	*raisecmd[] = { "amixer", "-c", "0", "set", "Master", "2dB+", NULL },
+	*scrpcmd[]  = { "urxvt", "-name", "scratchpad", NULL },
+	*sleepcmd[] = { "sudo", "pm-suspend", NULL },
+	*startcmd[] = { "compton", "-bc", "-r", "8", "-l", "-12", "-t", "-12", NULL },
+	*termcmd[]  = { "urxvtc",    NULL };
 
 #define DESKTOPCHANGE(K,N) \
     {  MOD4,             K,              change_desktop, {.i = N}}, \
@@ -177,6 +190,14 @@ static key keys[] = {
 
     /* exit */
     {  MOD4|CONTROL,     XK_q,          quit,              {.i = 0}},
+
+	/* media keys */
+	{ 0, XF86AudioPrev, spawn, { .com = prevcmd } },
+	{ 0, XF86AudioPlay, spawn, { .com = playcmd } },
+	{ 0, XF86AudioNext, spawn, { .com = nextcmd } },
+	{ 0, XF86AudioLowerVolume, spawn, { .com = lowercmd } },
+	{ 0, XF86AudioRaiseVolume, spawn, { .com = raisecmd } },
+	{ 0, XF86Sleep, spawn, { .com = sleepcmd } },
 };
 
 /* EDIT THIS: mouse-based shortcuts */
