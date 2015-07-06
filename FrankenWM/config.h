@@ -27,14 +27,14 @@
 #define FOLLOW_WINDOW   False     /* Follow the window when moved to a different desktop */
 #define CLICK_TO_FOCUS  True      /* Focus an unfocused window when clicked */
 #define BORDER_WIDTH    2         /* window border width */
-#define FOCUS           "#c5c8c6" /* focused window border color   */
-#define UNFOCUS         "#373b41" /* unfocused window border color */
+#define FOCUS           "#969896" /* focused window border color   */
+#define UNFOCUS         "#4d5057" /* unfocused window border color */
 #define DESKTOPS        10        /* number of desktops - edit DESKTOPCHANGE keys to suit */
 #define DEFAULT_DESKTOP 0         /* the desktop to focus on exec */
 #define MINWSZ          50        /* minimum window size in pixels */
 #define USELESSGAP      16        /* the size of the useless gap in pixels */
 #define GLOBALGAPS      True      /* use the same gap size on all desktops */
-#define MONOCLE_BORDERS False     /* display borders in monocle mode */
+#define MONOCLE_BORDERS True      /* display borders in monocle mode */
 #define INVERT          False     /* use alternative modes by default */
 #define AUTOCENTER      True      /* automatically center windows floating by default */
 #define OUTPUT_TITLE    False     /* output the title of the currently active window */
@@ -51,9 +51,8 @@
  * you do not wish to use this functionality.
  */
 static const AppRule rules[] = { \
-    /*  class     desktop  follow  float */
-    { "GNU Image",-1,      False,  True },
-    { "Skype",     3,      False,  True },
+    /* title     desktop  follow  float */
+    {  "Schism", -1,      False,  True },
 };
 
 /* helper for spawning shell commands, usually you don't edit this */
