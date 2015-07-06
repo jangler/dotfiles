@@ -1,0 +1,7 @@
+assoc .\.(avi|flv|mp4|mpeg|mov|wma|wmv)$ mpv
+assoc .\.(flac|mp3|ogg|wav)$ play
+assoc .\.(it|mod|s3m|xm|IT|MOD|S3M|XM)$ dumbplay
+assoc .\.(mid|MID)$ timidity
+assoc .\.nsfe?$ mednafen
+assoc ^https?://www\.youtube\.com/watch\?v=. mpv --no-video
+assoc ^https?://youtu.be/. mpv --no-video
