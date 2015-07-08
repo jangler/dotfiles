@@ -5,7 +5,6 @@ call pathogen#helptags()
 
 colorscheme Tomorrow-Night
 
-au Filetype c set ts=8
 au FileType css set et ts=2
 au FileType html set et ts=2
 au FileType javascript set et
