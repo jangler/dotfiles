@@ -21,7 +21,7 @@ static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* class           instance  title  tags mask  isfloating   monitor */
-	{ "urxvt",         NULL,     NULL,  1 << 0,    False,       -1 },
+	{ "URxvt",         NULL,     NULL,  1 << 0,    False,       -1 },
 	{ "qutebrowser",   NULL,     NULL,  1 << 1,    False,       -1 },
 	{ "schismtracker", NULL,     NULL,  1 << 3,    True,        -1 },
 	{ "Allegro",       NULL,     NULL,  1 << 3,    False,       -1 },
