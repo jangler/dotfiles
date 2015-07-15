@@ -1,4 +1,4 @@
-assoc .\.(avi|flv|mp4|mpeg|mov|wma|wmv)$ mpv
+assoc .\.(avi|flv|m4a|mp4|mpeg|mov|wma|wmv)$ mpv
 assoc .\.(flac|mp3|ogg|wav)$ play
 assoc .\.(it|mod|s3m|xm|IT|MOD|S3M|XM)$ modplay -f 10 -i linear
 assoc .\.(mid|MID)$ timidity
