@@ -1,4 +1,4 @@
-set ts=4 sw=0 sts=-1
+set ts=4 sw=0 sts=-1 tw=79
 
 call pathogen#infect()
 call pathogen#helptags()

@@ -1,6 +1,7 @@
 URxvt.font: -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
 URxvt.scrollBar: false
 
+! tomorrow night colorscheme
 URxvt.color0: #1d1f21
 URxvt.color1: #cc6666
 URxvt.color2: #b5bd68
@@ -17,7 +18,6 @@ URxvt.color12: #81a2be
 URxvt.color13: #b294bb
 URxvt.color14: #8abeb7
 URxvt.color15: #c5c8c6
-
 URxvt.foreground: 15
 URxvt.background: 0
 URxvt.cursorColor: 15
