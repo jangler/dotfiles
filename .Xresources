@@ -1,23 +1,36 @@
-URxvt.font: -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+URxvt.font: xft:Cousine:size=8:rgba=rgb
+URxvt.letterSpace: -1
 URxvt.scrollBar: false
 
-! tomorrow night colorscheme
-URxvt.color0: #1d1f21
-URxvt.color1: #cc6666
-URxvt.color2: #b5bd68
-URxvt.color3: #f0c674
-URxvt.color4: #81a2be
-URxvt.color5: #b294bb
-URxvt.color6: #8abeb7
-URxvt.color7: #4d5057
-URxvt.color8: #969896
-URxvt.color9: #cc6666
-URxvt.color10: #b5bd68
-URxvt.color11: #f0c674
-URxvt.color12: #81a2be
-URxvt.color13: #b294bb
-URxvt.color14: #8abeb7
-URxvt.color15: #c5c8c6
+! colors generated using https://github.com/jangler/schematic
+! dark black:    -L 43 -s 0
+! dark colors:   -L 70 -s 27 -h 15
+! dark white:    -L 70 -s 0
+! bright black:  -L 83.5 -s 0
+! bright colors: -L 86 -s 18 -h 15
+! bright white:  -L 97 -s 0
+URxvt.color0: #222222
+URxvt.color1: #ba525a
+URxvt.color2: #4d763f
+URxvt.color3: #956134
+URxvt.color4: #3371b4
+URxvt.color5: #855b9f
+URxvt.color6: #217d7a
+URxvt.color7: #696969
+URxvt.color8: #a3a3a3
+URxvt.color9: #f99ba1
+URxvt.color10: #95bb86
+URxvt.color11: #daa879
+URxvt.color12: #7fb7f1
+URxvt.color13: #c9a3df
+URxvt.color14: #6ac2bf
+URxvt.color15: #eeeeee
+
 URxvt.foreground: 15
 URxvt.background: 0
-URxvt.cursorColor: 15
+URxvt.cursorColor: 8
+
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+
+URxvt.perl-ext-common: default,selection-to-clipboard
