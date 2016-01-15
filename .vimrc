@@ -24,7 +24,6 @@ syntax enable
 
 " custom
 colorscheme reset
-let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
 map ! :!
 set noswf
 set ts=8 sw=0 sts=-1 noet
