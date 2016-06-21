@@ -1,6 +1,11 @@
-URxvt.font: xft:Cousine:size=8:rgba=rgb
+URxvt.font: xft:Source Code Pro:pixelsize=11:weight=medium
 URxvt.letterSpace: -1
-URxvt.scrollBar: false
+
+URxvt.scrollBar: False
+URxvt.cursorBlink: True
+URxvt.pointerBlank: True
+
+URxvt.perl-ext-common: default,selection-to-clipboard
 
 ! colors generated using https://github.com/jangler/schematic
 ! dark black:    -L 43 -s 0
@@ -25,12 +30,47 @@ URxvt.color12: #7fb7f1
 URxvt.color13: #c9a3df
 URxvt.color14: #6ac2bf
 URxvt.color15: #eeeeee
-
 URxvt.foreground: 15
 URxvt.background: 0
-URxvt.cursorColor: 8
 
-URxvt.inputMethod: ibus
-URxvt.preeditType: OverTheSpot
+! colors copied from chromeOS browser terminal
+!URxvt.color0: #000000
+!URxvt.color1: #cc0000
+!URxvt.color2: #4e9a06
+!URxvt.color3: #c4a000
+!URxvt.color4: #3465a4
+!URxvt.color5: #75507b
+!URxvt.color6: #06989a
+!URxvt.color7: #d3d7cf
+!URxvt.color8: #555753
+!URxvt.color9: #ef2929
+!URxvt.color10: #00ba13
+!URxvt.color11: #fce94f
+!URxvt.color12: #729fcf
+!URxvt.color13: #f200cb
+!URxvt.color14: #00b5bd
+!URxvt.color15: #eeeeec
+!URxvt.foreground: #f0f0f0
+!URxvt.background: #101010
+!URxvt.cursorColor: #870808
 
-URxvt.perl-ext-common: default,selection-to-clipboard
+! suckless.org colors
+!URxvt.color0: #222222
+!URxvt.color1: #a63a66
+!URxvt.color2: #55591b
+!URxvt.color3: #a54126
+!URxvt.color4: #006699
+!URxvt.color5: #4350b2
+!URxvt.color6: #126944
+!URxvt.color7: #eeeeee
+!URxvt.color8: #666666
+!URxvt.color9: #b74b75
+!URxvt.color10: #666b29
+!URxvt.color11: #b65234
+!URxvt.color12: #1177aa
+!URxvt.color13: #5760bf
+!URxvt.color14: #207b56
+!URxvt.color15: #ffffff
+!URxvt.foreground: 0
+!URxvt.background: 15
+!URxvt.highlightColor: #eeeeee
