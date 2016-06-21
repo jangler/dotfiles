@@ -2,7 +2,6 @@ URxvt.font: xft:Source Code Pro:pixelsize=11:weight=medium
 URxvt.letterSpace: -1
 
 URxvt.scrollBar: False
-URxvt.cursorBlink: True
 URxvt.pointerBlank: True
 
 URxvt.perl-ext-common: default,selection-to-clipboard
