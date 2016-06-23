@@ -12,11 +12,12 @@ PS1="\[\e[1;32m\]\u@\h \[\e[1;34m\]\W \$ \[\e[0m\]"
 alias ls='ls --color=auto'
 alias timidty='timidity --reverb=0'
 alias vim='vim -p'
-alias gbc='gambatte_sdl -i js0b3 js0b0 js0b14 js0b13 js0b4 js0b6 js0b7 js0b5 -v 2 -y'
-alias gbc-shoulder='gambatte_sdl -i js0b11 js0b10 js0b14 js0b13 js0b4 js0b6 js0b7 js0b5 -v 2 -y'
 alias gambatte='gambatte_sdl -v 2 -y'
 alias tvmode='xrandr --output HDMI-0 --right-of VGA-0 --mode'
 alias tvoff='xrandr --output HDMI-0 --off'
+
+# START SELECT A B UP DOWN LEFT RIGHT
+alias gbc='gambatte_sdl -i js0b7 js0b6 js0b0 js0b1 js0h0u js0h0d js0h0l js0h0r -v 2 -y'
 
 # colored man pages
 man() {
