@@ -51,3 +51,9 @@ mp3ify() {
 pklev() {
 	sox "$1" -n stats 2>&1 | grep 'Pk lev'
 }
+
+upload() {
+	resp=$(postfile -echo http://lightcones.net/submit "$1")
+	echo -n "http://lightcones.net"
+	echo "$resp" | grep -o 'href=/tmp/[^>]\+' | sed 's/href=//'
+}
