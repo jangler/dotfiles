@@ -30,6 +30,7 @@ set tw=79
 
 " filetypes
 au filetype c set ts=4
+au filetype cpp set ts=4
 au filetype css set et ts=2
 au filetype gitcommit set tw=72
 au filetype go set ts=4
