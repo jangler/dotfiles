@@ -1,0 +1,71 @@
+[Audio]
+sample_rate=44100
+bits=16
+channels=2
+buffer_size=1024
+[Mixer Settings]
+channel_limit=128
+interpolation_mode=1
+no_ramping=0
+surround_effect=1
+[EQ Low Band]
+freq=0
+gain=0
+[EQ Med Low Band]
+freq=16
+gain=0
+[EQ Med High Band]
+freq=96
+gain=0
+[EQ High Band]
+freq=127
+gain=0
+[Video]
+driver=sdl
+fullscreen=0
+mouse_cursor=2
+gl_bilinear=0
+lazy_redraw=0
+[General]
+vis_style=2
+time_display=1
+classic_mode=0
+make_backups=1
+numbered_backups=0
+accidentals_as_flats=0
+meta_is_ctrl=0
+altgr_is_alt=1
+midi_like_tracker=0
+stop_on_load=1
+palette=2
+palette_cur=...ULGh_Tuumg.KzzKGaHI257K.5SADbSruscccY4KLFECBA
+[Directories]
+modules=/home/brandon/public/modules
+samples=/home/brandon
+instruments=/home/brandon
+module_pattern=*.it\073 *.xm\073 *.s3m\073 *.mtm\073 *.669\073 *.mod\073 *.mdl\073 *.mt2\073 *.stm\073 *.far\073 *.ult\073 *.med\073 *.ptm\073 *.okt\073 *.amf\073 *.dmf\073 *.imf\073 *.sfx\073 *.mus\073 *.mid
+export_pattern=*.wav\073 *.aiff\073 *.aif
+sort_with=strverscmp
+[Info Page]
+layout=samples 19 global 3 track24 15
+[Pattern Editor]
+link_effect_column=0
+draw_divisions=1
+centralise_cursor=0
+highlight_current_row=0
+edit_copy_mask=7
+volume_percent=100
+fast_volume_percent=67
+fast_volume_mode=0
+keyjazz_noteoff=0
+keyjazz_write_noteoff=0
+keyjazz_repeat=1
+mask_copy_search_mode=0
+invert_home_end=0
+crayola_mode=0
+track_view_scheme=cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+channel_multi=----------------------------------------------------------------
+[Diskwriter]
+rate=44100
+bits=16
+channels=2
