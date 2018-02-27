@@ -354,7 +354,15 @@ globalkeys = gears.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+    awful.key({ modkey }, "b",
+        function ()
+            myscreen = awful.screen.focused()
+            myscreen.mywibox.visible = not myscreen.mywibox.visible
+        end,
+        {description = "toggle statusbar"}
+    )
 )
 
 clientkeys = gears.table.join(
@@ -398,7 +406,10 @@ clientkeys = gears.table.join(
             c.maximized_horizontal = not c.maximized_horizontal
             c:raise()
         end ,
-        {description = "(un)maximize horizontally", group = "client"})
+        {description = "(un)maximize horizontally", group = "client"}),
+    awful.key({ modkey, "Control"   }, "c",
+        function (c) c.border_width  = c.border_width > 0 and 0 or beautiful.border_width end,
+	{description = "toggle border", group = "client"})
 )
 
 -- Bind all key numbers to tags.
